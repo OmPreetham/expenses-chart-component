@@ -1,4 +1,12 @@
+import Balance from './components/Balance'
+import Chart from './components/Chart'
+
 const App = () => {
-  return <div>App</div>
+  return (
+    <main className="wrapper">
+      <Balance />
+      <Chart />
+    </main>
+  )
 }
 export default App

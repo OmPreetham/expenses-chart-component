@@ -33,13 +33,13 @@ Make sure you have Node.js and npm (or yarn) installed on your machine.
 1. Clone this repository to your local machine using the following command:
 
    ```
-   git clone https://github.com/OmPreetham/intro-section-with-dropdown-navigation.git
+   git clone https://github.com/OmPreetham/expenses-chart-component.git
    ```
 
 1. Navigate into the project directory:
 
    ```
-   cd intro-section-with-dropdown-navigation
+   cd expenses-chart-component
    ```
 
 1. Install dependencies using npm:
