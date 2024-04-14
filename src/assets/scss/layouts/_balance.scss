@@ -1,0 +1,29 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $gap-normal;
+
+  padding: 1.5rem 2rem;
+
+  border-radius: 1rem;
+
+  background-color: $clr-primary-soft-red;
+
+  &__amount-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-small;
+  }
+
+  &__title {
+    @include font-title-light;
+  }
+
+  &__amount {
+    @include font-balance-bold;
+  }
+}

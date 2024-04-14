@@ -1,0 +1,25 @@
+@use '../utils/variables' as *;
+
+html {
+  font-family: $ff-dm-sans;
+  font-size: $fs-base;
+}
+
+body {
+  max-width: $max-width-body;
+  min-width: $min-width-body;
+
+  margin-inline: auto;
+
+  min-height: $min-height-screen;
+
+  background-color: $clr-neutral-cream;
+}
+
+#root {
+  min-height: $min-height-screen;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

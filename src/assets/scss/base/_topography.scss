@@ -1,0 +1,44 @@
+@use '../utils/variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@mixin font-balance-bold {
+  font-size: $fs-amount-balance;
+  color: $clr-neutral-cream;
+  font-weight: $fw-700;
+  line-height: 1;
+}
+
+@mixin font-title-light {
+  font-size: $fs-base;
+  color: $clr-neutral-cream;
+  font-weight: $fw-400;
+  opacity: 0.8;
+}
+
+@mixin font-title-normal {
+  font-size: $fs-base;
+  color: $clr-neutral-medium-brown;
+  font-weight: $fw-400;
+  opacity: 0.8;
+}
+
+@mixin font-title-dark {
+  font-size: $fs-base;
+  color: $clr-neutral-dark-brown;
+  font-weight: $fw-700;
+}
+
+@mixin font-day-normal {
+  font-size: $fs-day;
+  color: $clr-neutral-medium-brown;
+  font-weight: $fw-400;
+  opacity: 0.8;
+}
+
+@mixin font-month-amount-bold {
+  font-size: $fs-amount-month;
+  color: $clr-neutral-dark-brown;
+  font-weight: $fw-700;
+  line-height: 1;
+}

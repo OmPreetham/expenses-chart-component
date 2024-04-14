@@ -1,0 +1,120 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-normal;
+
+  padding: 2rem;
+
+  border-radius: 1rem;
+
+  background-color: $clr-neutral-very-pale-orange;
+
+  &__title {
+    font-size: $fs-heading;
+    font-weight: $fw-700;
+    color: $clr-neutral-dark-brown;
+  }
+
+  &__graph-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: $gap-general;
+    padding-block: 1.5rem;
+    border-bottom: 0.1rem solid $clr-neutral-cream;
+  }
+
+  &__bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: $gap-small;
+
+    &:hover .chart__bar-amount,
+    &:focus .chart__bar-amount {
+      opacity: 1;
+    }
+  }
+
+  &__bar-amount {
+    background-color: $clr-neutral-dark-brown;
+
+    padding: 0.5em;
+
+    font-size: calc(0.4rem + 0.5vw);
+    font-weight: $fw-700;
+    color: $clr-neutral-cream;
+
+    border-radius: 0.3rem;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__bar {
+    width: calc(1.5rem + 1.5vw);
+    border-radius: 0.3rem;
+
+    cursor: pointer;
+
+    animation: revealAndGrow 1s ease forwards;
+  }
+
+  &__day {
+    @include font-day-normal;
+  }
+
+  &__stats-wrapper {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: $gap-normal;
+  }
+
+  &__month-wrapper {
+    text-align: start;
+  }
+
+  &__month-current {
+    @include font-title-normal;
+  }
+
+  &__month-total {
+    @include font-month-amount-bold;
+  }
+
+  &__interest-wrapper {
+    text-align: end;
+  }
+
+  &__interest-last {
+    @include font-title-dark;
+  }
+
+  &__month-last {
+    @include font-title-normal;
+  }
+}
+
+@keyframes revealAndGrow {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .chart {
+    &__graph-wrapper {
+      gap: $gap-small;
+    }
+  }
+}

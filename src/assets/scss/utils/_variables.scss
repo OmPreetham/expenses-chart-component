@@ -2,39 +2,34 @@
 
 // Primary
 
-$clr-primary-light-cyan: hsl(193, 38%, 86%);
-$clr-primary-neon-green: hsl(150, 100%, 66%);
+$clr-primary-soft-red: hsl(10, 79%, 65%);
+$clr-primary-cyan: hsl(186, 34%, 60%);
 
 // Neutral
 
-$clr-neutral-grayish-blue: hsl(217, 19%, 38%);
-$clr-neutral-dark-grayish-blue: hsl(217, 19%, 24%);
-$clr-neutral-dark-blue: hsl(218, 23%, 16%);
+$clr-neutral-dark-brown: hsl(25, 47%, 15%);
+$clr-neutral-medium-brown: hsl(28, 10%, 53%);
+$clr-neutral-cream: hsl(27, 66%, 92%);
+$clr-neutral-very-pale-orange: hsl(33, 100%, 98%);
 
 // Topography
 
 // Font Family
 
-$ff-manrope: 'Manrope', sans-serif;
+$ff-dm-sans: 'DM Sans', sans-serif;
 
 // Font Sizes
 
 $fs-base: 1rem;
-$fs-heading1: 0.8rem;
-$fs-quote: 1.7rem;
+$fs-heading: 1.8rem;
+$fs-amount-balance: 1.7rem;
+$fs-day: 0.8rem;
+$fs-amount-month: 2.7rem;
 
 // Font Weights
 
-$fw-800: 800;
-
-// Letter Spacing
-
-$ls-1px: 1px;
-$ls-2px: 2px;
-
-// Line Heights
-
-$lh-101: 1.1;
+$fw-400: 400;
+$fw-700: 700;
 
 // Screen
 

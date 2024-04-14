@@ -1,0 +1,22 @@
+@use '../utils/variables' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-normal;
+
+  margin: 1rem;
+
+  animation: popup-animation 0.3s ease-out;
+}
+
+@keyframes popup-animation {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
