@@ -6,7 +6,7 @@ const Balance = () => {
         <p className="balance__amount">$921.48</p>
       </div>
       <div className="balance__logo-wrapper">
-        <img className="balance__logo" src="/images/logo.svg" alt="Logo" />
+        <img className="balance__logo" src="images/logo.svg" alt="Logo" />
       </div>
     </div>
   )
